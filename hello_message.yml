@@ -1,0 +1,7 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: hello message extra vars
+      debug:
+        msg: "{{ message }}"
+        
